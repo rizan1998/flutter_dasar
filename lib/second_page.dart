@@ -4,6 +4,8 @@ import 'package:navigation_example/second_page.dart';
 
 import 'package:navigation_example/17app_bar_gradasi.dart';
 import 'package:navigation_example/18card.dart';
+import 'package:navigation_example/19TextField.dart';
+import 'package:navigation_example/20TextDecoration.dart';
 
 class SecondPage extends StatelessWidget {
   @override
@@ -24,9 +26,29 @@ class SecondPage extends StatelessWidget {
               },
             ),
             SizedBox(height: 20), // Menambahkan jarak antara tombol
-            butttonPage(context, '17 AppBar Gradasi', AppBarGradasi()),
+            butttonPage(
+              context,
+              '17 AppBar Gradasi',
+              AppBarGradasi(),
+            ),
             SizedBox(height: 20), // Menambahkan jarak antara tombol
-            butttonPage(context, '18 Card', CardPage()),
+            butttonPage(
+              context,
+              '18 Card',
+              CardPage(),
+            ),
+            SizedBox(height: 20), // Menambahkan jarak antara tombol
+            butttonPage(
+              context,
+              '19 Text Field',
+              TextFieldPage(),
+            ),
+            SizedBox(height: 20), // Menambahkan jarak antara tombol
+            butttonPage(
+              context,
+              '20 Textfield decoration',
+              TextFieldPageDecoration(),
+            ),
           ],
         ),
       ),
