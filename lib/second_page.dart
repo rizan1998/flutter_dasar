@@ -6,6 +6,8 @@ import 'package:navigation_example/17app_bar_gradasi.dart';
 import 'package:navigation_example/18card.dart';
 import 'package:navigation_example/19TextField.dart';
 import 'package:navigation_example/20TextDecoration.dart';
+import 'package:navigation_example/21MediaQuery.dart';
+import 'package:navigation_example/22InkWell.dart';
 
 class SecondPage extends StatelessWidget {
   @override
@@ -48,6 +50,18 @@ class SecondPage extends StatelessWidget {
               context,
               '20 Textfield decoration',
               TextFieldPageDecoration(),
+            ),
+            SizedBox(height: 20), // Menambahkan jarak antara tombol
+            butttonPage(
+              context,
+              '21 Media Query',
+              MediaQueryPage(),
+            ),
+            SizedBox(height: 20),
+            butttonPage(
+              context,
+              '22 Inkwell',
+              InkwellPage(),
             ),
           ],
         ),
