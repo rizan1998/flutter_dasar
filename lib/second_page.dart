@@ -8,6 +8,7 @@ import 'package:navigation_example/19TextField.dart';
 import 'package:navigation_example/20TextDecoration.dart';
 import 'package:navigation_example/21MediaQuery.dart';
 import 'package:navigation_example/22InkWell.dart';
+import 'package:navigation_example/23Opacity.dart';
 
 class SecondPage extends StatelessWidget {
   @override
@@ -62,6 +63,12 @@ class SecondPage extends StatelessWidget {
               context,
               '22 Inkwell',
               InkwellPage(),
+            ),
+            SizedBox(height: 20),
+            butttonPage(
+              context,
+              '23 Opacity',
+              OpacityPage(),
             ),
           ],
         ),
