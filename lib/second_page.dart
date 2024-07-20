@@ -9,6 +9,7 @@ import 'package:navigation_example/20TextDecoration.dart';
 import 'package:navigation_example/21MediaQuery.dart';
 import 'package:navigation_example/22InkWell.dart';
 import 'package:navigation_example/23Opacity.dart';
+import 'package:navigation_example/24LoginPage.dart';
 
 class SecondPage extends StatelessWidget {
   @override
@@ -69,6 +70,12 @@ class SecondPage extends StatelessWidget {
               context,
               '23 Opacity',
               OpacityPage(),
+            ),
+            SizedBox(height: 20),
+            butttonPage(
+              context,
+              '24 Login Page',
+              LoginPage(),
             ),
           ],
         ),
