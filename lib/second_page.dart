@@ -10,6 +10,7 @@ import 'package:navigation_example/21MediaQuery.dart';
 import 'package:navigation_example/22InkWell.dart';
 import 'package:navigation_example/23Opacity.dart';
 import 'package:navigation_example/24LoginPage.dart';
+import 'package:navigation_example/25.Heroanimation.dart';
 
 class SecondPage extends StatelessWidget {
   @override
@@ -81,7 +82,7 @@ class SecondPage extends StatelessWidget {
             butttonPage(
               context,
               '25 Hero Animation',
-              LoginPage(),
+              HeroAnimationPage(),
             ),
           ],
         ),
