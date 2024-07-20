@@ -77,6 +77,12 @@ class SecondPage extends StatelessWidget {
               '24 Login Page',
               LoginPage(),
             ),
+            SizedBox(height: 20),
+            butttonPage(
+              context,
+              '25 Hero Animation',
+              LoginPage(),
+            ),
           ],
         ),
       ),

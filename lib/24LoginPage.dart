@@ -150,8 +150,59 @@ class MainLoginPage extends StatelessWidget {
                                   end: Alignment.bottomCenter),
                               borderRadius: BorderRadius.circular(20)),
                         ),
-                      )
+                      ),
+                      FloatingActionButton(
+                        backgroundColor: Color(0xFF1878F1),
+                        mini: true,
+                        elevation: 0,
+                        onPressed: () {},
+                        child: Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/facebook.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                      ),
+                      FloatingActionButton(
+                        backgroundColor: Colors.black,
+                        mini: true,
+                        elevation: 0,
+                        onPressed: () {},
+                        child: Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/x.webp'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                      ),
                     ]),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Don't have an account?",
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 11,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                    Text(
+                    "SIGN UP",
+                    style: TextStyle(
+                      color: Color(0xFFFF4891),
+                      fontSize: 11,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ],
               )
             ]),
           ),
