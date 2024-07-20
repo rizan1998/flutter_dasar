@@ -115,27 +115,46 @@ class MainLoginPage extends StatelessWidget {
                       style: TextStyle(color: Color(0xFFFF4891)),
                     ),
                   )),
+              Container(
+                margin: EdgeInsets.fromLTRB(20, 0, 20, 20),
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.5,
+                        height: 40,
+                        child: Container(
+                          child: Material(
+                              borderRadius: BorderRadius.circular(20),
+                              color: Colors.transparent,
+                              child: InkWell(
+                                borderRadius: BorderRadius.circular(20),
+                                splashColor: Colors.amber,
+                                onTap: () {},
+                                child: Center(
+                                  child: Text(
+                                    'SIGN IN',
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w700),
+                                  ),
+                                ),
+                              )),
+                          decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                  colors: [
+                                    Color(0xFFB226B2),
+                                    Color(0xFFFF6491)
+                                  ],
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter),
+                              borderRadius: BorderRadius.circular(20)),
+                        ),
+                      )
+                    ]),
+              )
             ]),
           ),
-          Container(
-            margin: EdgeInsets.fromLTRB(20, 0, 20, 20),
-            child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.5,
-                    height: 40,
-                    child: Container(
-                      decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                              colors: [Color(0xFFB226B2), Color(0xFFFF6491)],
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter),
-                          borderRadius: BorderRadius.circular(20)),
-                    ),
-                  )
-                ]),
-          )
         ],
       ),
     );
